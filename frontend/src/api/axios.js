@@ -1,8 +1,7 @@
 import axios from "axios";
 
-const API = axios.create({
-  baseURL: "http://127.0.0.1:8081/api",
-});
+const API = axios.create({ baseURL: "https://job-portal-project-7tud.onrender.com/api" });
+
 
 // Attach JWT token to every request automatically
 API.interceptors.request.use((req) => {
